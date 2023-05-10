@@ -1,6 +1,6 @@
 {
-  "name": "project",
-  "homepage": "https://princeibs.github.io/project-topics-gen",
+  "name": "se-project",
+  "homepage": "https://princeibs.github.io/400-se-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,6 +43,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^4.0.0"
   }
 }
