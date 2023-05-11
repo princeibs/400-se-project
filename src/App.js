@@ -5,8 +5,6 @@ import {AiOutlineSearch} from "react-icons/ai"
 import { Modal, Button, Row, Col, FloatingLabel, Form} from 'react-bootstrap';
 import Loader from './Loader/Loader';
 
-const API_KEY = process.env.REACT_APP_OPENAI_API_KEY
-
 const SearchTopicModal = ({onHide, show, generate}) => {
   const [faculty, setFaculty] = useState(null)
   const [department, setDepartment] = useState(null)
@@ -175,7 +173,7 @@ const App = () => {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              "Authorization": "Bearer " + API_KEY
+              "Authorization": "Bearer " + process.env.REACT_APP_OPENAI_API_KEY
             },
             body: JSON.stringify(APIBody)
           }).then(res => {
